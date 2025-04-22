@@ -1,0 +1,108 @@
+.calendar-view {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2a06c;
+    border-radius: 12px; /* Added border radius to whole calendar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds depth */
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px 20px; /* Increased padding */
+    background-color: #eae4e2;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  }
+  
+  .calendar-header h2 {
+    margin: 0;
+    font-size: 1.5rem; /* Slightly larger text */
+    color: #333; /* Better contrast */
+  }
+  
+  .calendar-header button {
+    padding: 8px 16px; /* Larger buttons */
+    border-radius: 6px; /* Rounded button corners */
+    border: none;
+    background-color: #f2a06c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .calendar-header button:hover {
+    background-color: #e0905c; /* Darker on hover */
+  }
+  
+  /* Rest of your existing styles... */
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin-top: 20px;
+  }
+  
+  .calendar-day-header {
+    text-align: center;
+    font-weight: bold;
+    padding: 12px 8px; /* Slightly taller day headers */
+    background: #f0f0f0;
+    border-radius: 6px; /* Rounded day headers */
+  }
+  
+  .calendar-day {
+    min-height: 80px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    position: relative;
+    background-color: #f9f9f9d1;
+    border-radius: 6px; /* Rounded day cells */
+    transition: transform 0.2s; /* Smooth hover effect */
+  }
+  
+  .calendar-day:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  .day-number {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 0.8rem;
+  }
+  
+  .day-entry {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .day-mood {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .day-weather {
+    font-size: 0.8rem;
+  }
+  
+  .has-entry {
+    background-color: rgba(74, 111, 165, 0.1);
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .filter-select {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }

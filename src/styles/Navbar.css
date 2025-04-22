@@ -1,0 +1,111 @@
+.navbar {
+    background: linear-gradient(135deg, #4a6fa5 0%, #3a5a8a 100%);
+    color: white;
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 100;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #fff, #e6f7ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.5px;
+  }
+  
+  .weather-preview {
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+  
+  .nav-tabs {
+    display: flex;
+    gap: 0.5rem;
+    position: relative;
+  }
+  
+  .nav-tab {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-tab:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .nav-tab.active {
+    color: white;
+    font-weight: 600;
+  }
+  
+  .tab-icon {
+    font-size: 1.2rem;
+  }
+  
+  .entry-count {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.2rem 0.5rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+  }
+  
+  .active-indicator {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateX(-50%) scaleX(0); }
+    to { opacity: 1; transform: translateX(-50%) scaleX(1); }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    
+    .navbar-brand {
+      margin-bottom: 0.5rem;
+    }
+    
+    .nav-tab {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+    }
+  }
